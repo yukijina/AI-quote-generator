@@ -3,20 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI recipe generator</title>
+    <title>AI quote generater</title>
+    <!-- Typewrite plug in -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- axios -->
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>Welcome to AI Recipe Generator</h1>
+    <h1>Welcome to AI Quote Generator</h1>
 
     <div class="form-container">
-      <form>
-        <input type="text" placeholder="Enter one main ingredient" />
+      <form id="input-form">
+        <input type="text" placeholder="Enter a topic" id="user-input" />
         <input type="submit" value="submit" />
       </form>
     </div>
 
-    <div class="recepe-container">Receipe here you go</div>
+    <div class="recipe-container"></div>
     <script src="src/index.js"></script>
   </body>
 </html>
