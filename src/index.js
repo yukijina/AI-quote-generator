@@ -2,7 +2,7 @@ function displayQuote(response) {
   new Typewriter('.result-container', {
     strings: response.data.answer,
     autoStart: true,
-    delay: 50,
+    delay: 60,
     cursor: '',
   });
 }
@@ -19,7 +19,8 @@ function generateQuote(event) {
   axios.get(url).then(displayQuote);
 
   let resultContainer = document.querySelector('.result-container');
-  resultContainer.innerHTML = 'Generating a quote...';
+  resultContainer.innerHTML = '<p class="blink">Generating a quote...</p>';
+  resultContainer.classList.remove('hidden');
 }
 
 let formElement = document.querySelector('#input-form');
