@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2e5bf;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Main Conatiner */
+main {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fdfcfc;
+  padding: 50px 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #cb6040;
+  font-family: 'Kranky', serif;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Form Section */
+.form-container {
+  margin-bottom: 50px;
+}
+
+#input-form {
+  display: flex;
+}
+
+#user-input {
+  width: 80%;
+  padding: 10px 5px;
+  border-radius: 10px;
+  border: 1px solid #257180;
+  font-size: 16px;
+}
+
+#user-input:focus {
+  outline: none;
+  border: 2px solid #257180;
+}
+
+.submit-button {
+  background-color: #257180;
+  color: #fdfcfc;
+  width: 25%;
+  margin-left: 2%;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.example {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.result-container {
+  border-left: 2px solid #257180;
+  padding-left: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* When AI generates quotes with API */
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.result-container .shecode {
+  color: #cb6040;
+  font-size: 14px;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 80px;
+}
